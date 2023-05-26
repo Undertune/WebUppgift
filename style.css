@@ -1,0 +1,33 @@
+#buttons_div{
+    /* Style taggar för att formattera knapparna rätt samt sätta bakgrundsfärg, storlek osv. */
+    overflow: hidden;
+    background-color: beige;
+    align-items: center;
+    height: 50%;
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.allbuttons{
+    /* Style taggar för alla knapparna. Jag använder % för att sidan ska bli  responsiv. */
+    background-color: violet;
+    border: none;
+    color: white;
+    padding: 5% 8%;
+    margin: 0.5dvi;
+    height: 20%;
+    width: 60%;
+    margin-left: 23%;
+    border-radius: 8px;
+    word-wrap: break-word;
+    box-sizing: content-box;
+}
+
+/* Ändrar färgen när musen kommer över knappen. */
+.allbuttons:hover{
+    background-color: rgb(15, 87, 176);
+}   

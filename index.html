@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="flexbs" id="Div_Header">
+        <!-- I H1 taggen finns en div med  ID. Det ID:t används i funktionen goodvibespopup(). Diven ändras till en text när du klickar på Good vibes knappen. -->
+        <h1><div id="goodvibes"></div></h1>
+        <!-- En div med ID som ändras i funktionen displayTime(). Den visar den aktuella tiden då knappen Time har tryckts. -->
+        <b> <div id="tid"></div> </b>
+        <br>
+        <div id="bild">
+            <!-- Vanlig bild med en satt height och width och id som används i funktionen pictureChange(). -->
+            <img src="harambe.jpg" height="20%" width="12%" id="idBild">
+        </div>
+    </div>
+    <!-- En div med alla knappar. Det finns divs i denna diven för att göra koden och strukturen enklare. Den div med id:t knappar_div är ansvarig för bakgrunden i knapprektangeln. -->
+    <div id="buttons_div">
+        <!-- Knappar har samma klassnamn för att de ska se likadana ut. Det ändras i style.css. Sen kallar de på sin funktion som finns i script.js när de klickas. -->
+        <div>
+            <button class="allbuttons" id="changebg" onclick="runChangebg();">Change Bg</button>
+            <button class="allbuttons" onclick="goodvibespopup();">Good vibes</button>
+            <button class="allbuttons" onclick='timeDisplay();'>Time</button>
+        </div>
+        <div>
+            <button class="allbuttons" id="pictureChange" onclick="pictureChange();">Change Picture</button>
+            <button class="allbuttons" onclick="pictureHide();">Hide picture</button>
+            <button class="allbuttons" onclick="pictureShow();">Show picture</button>
+        </div>
+        <div>
+            <button class="allbuttons">Header</button>
+            <button class="allbuttons">Remove header</button>
+            <button class="allbuttons">Show header</button>
+        </div>
+    </div>
+</body>
+</html>
