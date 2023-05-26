@@ -31,3 +31,20 @@
 .allbuttons:hover{
     background-color: rgb(15, 87, 176);
 }   
+
+.background{
+    display: none;
+}
+
+.idBild{
+    width: 300px;
+    height: 200px;
+
+}
+
+.header{
+    align-items: center;
+    text-align: center;
+    opacity: 90%;
+    background: grey;
+}
